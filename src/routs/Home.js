@@ -24,6 +24,9 @@ const Home = () => {
         }
     }
 
+    // http://openapi.foodsafetykorea.go.kr/api/81229f43ae1247cab397/COOKRCP01/json/1/5
+    // 인증키 81229f43ae1247cab397
+
     useEffect(() => {
         getMovies()
     }, []);
