@@ -5,7 +5,7 @@ import Appmovie from '../components/Appmovie';
 import Upcomming from '../components/Upcomming';
 
 const Home = () => {
-    const APIKEY =process.env.REACT_APP_API_KEY;
+    //const APIKEY =process.env.REACT_APP_API_KEY;
     const [appMovie, setAppMovie] = useState([]);
     const [isLoading, setLoading] = useState(true);
     const [VisibleMovies, setVisibleMovies] = useState(6);
@@ -13,7 +13,7 @@ const Home = () => {
 
     const getMovies = async () => {
         try {
-            const response = await axios.get(`https://api.themoviedb.org/3/movie/now_playing?api_key=${APIKEY}&language=ko-KR`);
+            const response = await axios.get(`https://api.themoviedb.org/3/movie/now_playing?api_key=81229f43ae1247cab397&language=ko-KR`);
 
             setAppMovie(response.data.results);
             // console.log(response.data)
@@ -27,6 +27,8 @@ const Home = () => {
 
     // http://openapi.foodsafetykorea.go.kr/api/81229f43ae1247cab397/COOKRCP01/json/1/5
     // 인증키 81229f43ae1247cab397
+
+    //546c72b99cf64514c2c03c7ef473011b - 선생님 키
 
     useEffect(() => {
         getMovies()
