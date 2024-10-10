@@ -11,7 +11,7 @@ const About = () => {
     const [appM, setAppM]=useState(null);
 
     useEffect(() =>{
-        axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=81229f43ae1247cab397&language=ko-KR`).then(res => {
+        axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=546c72b99cf64514c2c03c7ef473011b&language=ko-KR`).then(res => {
             console.log(res.data);
             setAppM(res.data);
             setLoading(false);

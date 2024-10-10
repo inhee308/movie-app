@@ -9,7 +9,7 @@ const Event = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=81229f43ae1247cab397&language=ko-KR`).then(response => {
+        axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=546c72b99cf64514c2c03c7ef473011b&language=ko-KR`).then(response => {
             setEventMovie(response.data)
             console.log(response.data)
             setLoading(false)
